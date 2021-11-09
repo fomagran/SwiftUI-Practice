@@ -8,18 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    
     @State private var isEnabled:Bool = false
     
     var body: some View {
-        VStack(alignment: .center, spacing:60) {
+        Toggle(isOn:$isEnabled) {
             Text(isEnabled ? "가능" : "불가능")
-            
-            Button {
-                isEnabled.toggle()
-            } label: {
-                Text(isEnabled ? "불가능":"가능")
-            }
         }
     }
 }
