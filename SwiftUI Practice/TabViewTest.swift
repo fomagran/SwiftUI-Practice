@@ -8,19 +8,30 @@
 import SwiftUI
 
 struct TabViewTest: View {
+    @State private var index = 0
+    
     var body: some View {
-        TabView {
+        TabView(selection:$index) {
             LoginView()
+                .onTapGesture {
+                    index = 0
+                }
                 .tabItem({
                     Image(systemName: "arrow.right.circle.fill")
                     Text("Login")
                 })
             HelloView()
+                .onTapGesture {
+                    index = 1
+                }
                 .tabItem {
                     Image(systemName: "person.crop.circle")
                     Text("Hello")
                 }
             SettingView()
+                .onTapGesture {
+                    index = 2
+                }
                 .tabItem {
                     Image(systemName: "gearshape")
                     Text("Setting")
