@@ -11,9 +11,7 @@ struct ContentView: View {
     @State private var isEnabled:Bool = false
     
     var body: some View {
-        Toggle(isOn:$isEnabled) {
-            Text(isEnabled ? "가능" : "불가능")
-        }
+        EnterView()
     }
 }
 

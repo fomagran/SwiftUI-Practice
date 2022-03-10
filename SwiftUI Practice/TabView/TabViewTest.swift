@@ -8,36 +8,42 @@
 import SwiftUI
 
 struct TabViewTest: View {
-    @State private var index = 0
     
+    @State var index = 0
+    
+    init() {
+        UITabBar.appearance().unselectedItemTintColor = UIColor.white
+    }
+
     var body: some View {
-        TabView(selection:$index) {
-            LoginView()
-                .onTapGesture {
-                    index = 0
-                }
+        let selection = Binding<Int>(
+                    get: { self.index },
+                    set: { self.index = $0
+                        print($0)
+                })
+        
+        TabView(selection:selection) {
+            LoginView(goIndex:$index)
                 .tabItem({
                     Image(systemName: "arrow.right.circle.fill")
                     Text("Login")
-                })
-            HelloView()
-                .onTapGesture {
-                    index = 1
-                }
+                }).tag(0)
+            HelloView(goIndex:$index)
                 .tabItem {
                     Image(systemName: "person.crop.circle")
                     Text("Hello")
-                }
-            SettingView()
-                .onTapGesture {
-                    index = 2
-                }
+                }.tag(1)
+            SettingView(goIndex:$index)
                 .tabItem {
                     Image(systemName: "gearshape")
                     Text("Setting")
-                }
+                }.tag(2)
         }
-        
+        .foregroundColor(.white)
+        .accentColor(.purple)
+        .onAppear {
+            UITabBar.appearance().backgroundColor = .black
+        }
     }
 }
 

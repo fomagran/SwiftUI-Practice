@@ -8,13 +8,10 @@
 import SwiftUI
 
 struct SettingView: View {
+    @Binding var goIndex:Int
     var body: some View {
-        Text("Setting View")
-    }
-}
-
-struct SettingView_Previews: PreviewProvider {
-    static var previews: some View {
-        SettingView()
+        Button("Go Hello") {
+            self.goIndex = 1
+        }
     }
 }
