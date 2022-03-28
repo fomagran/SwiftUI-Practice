@@ -7,14 +7,16 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct ContentView: View {
     @State private var isEnabled:Bool = false
     
     var body: some View {
-        EnterView()
+        GeometryView()
     }
 }
 
+@available(iOS 15.0, *)
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
