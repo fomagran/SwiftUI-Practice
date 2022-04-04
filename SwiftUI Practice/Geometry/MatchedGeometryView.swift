@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct GeometryView: View {
+struct MatchedGeometryView: View {
     
     @State var detailShow:Bool = false
     @Namespace var animation
@@ -64,9 +64,9 @@ struct GeometryView: View {
         .ignoresSafeArea(.all)
     }
     
-    struct GeometryView_Previews: PreviewProvider {
+    struct MathcedGeometryView_Previews: PreviewProvider {
         static var previews: some View {
-            GeometryView()
+            MatchedGeometryView()
                 .previewDevice("iPhone 13 Pro")
         }
     }

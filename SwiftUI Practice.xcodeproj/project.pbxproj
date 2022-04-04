@@ -11,7 +11,9 @@
 		04234BEE27D1022300AC469D /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04234BED27D1022300AC469D /* SettingView.swift */; };
 		04234BF027D1023100AC469D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04234BEF27D1023100AC469D /* LoginView.swift */; };
 		04234BF227D1024700AC469D /* HelloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04234BF127D1024700AC469D /* HelloView.swift */; };
-		04784A4C27F1520F004C2D83 /* GeometryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04784A4B27F1520F004C2D83 /* GeometryView.swift */; };
+		04784A4C27F1520F004C2D83 /* MatchedGeometryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04784A4B27F1520F004C2D83 /* MatchedGeometryView.swift */; };
+		04784A5B27FA74D7004C2D83 /* GeometryReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04784A5A27FA74D7004C2D83 /* GeometryReaderView.swift */; };
+		04784A5D27FA7632004C2D83 /* GeometryReaderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04784A5C27FA7632004C2D83 /* GeometryReaderDetailView.swift */; };
 		048B344327D9A124001E6643 /* EnterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 048B344227D9A124001E6643 /* EnterView.swift */; };
 		04DA724C2737AD7E00479265 /* SwiftUI_PracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA724B2737AD7E00479265 /* SwiftUI_PracticeApp.swift */; };
 		04DA724E2737AD7E00479265 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DA724D2737AD7E00479265 /* ContentView.swift */; };
@@ -24,7 +26,9 @@
 		04234BED27D1022300AC469D /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		04234BEF27D1023100AC469D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		04234BF127D1024700AC469D /* HelloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloView.swift; sourceTree = "<group>"; };
-		04784A4B27F1520F004C2D83 /* GeometryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryView.swift; sourceTree = "<group>"; };
+		04784A4B27F1520F004C2D83 /* MatchedGeometryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometryView.swift; sourceTree = "<group>"; };
+		04784A5A27FA74D7004C2D83 /* GeometryReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderView.swift; sourceTree = "<group>"; };
+		04784A5C27FA7632004C2D83 /* GeometryReaderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryReaderDetailView.swift; sourceTree = "<group>"; };
 		048B344227D9A124001E6643 /* EnterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterView.swift; sourceTree = "<group>"; };
 		04DA72482737AD7E00479265 /* SwiftUI Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DA724B2737AD7E00479265 /* SwiftUI_PracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_PracticeApp.swift; sourceTree = "<group>"; };
@@ -44,12 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04784A4A27F151E3004C2D83 /* GeometryEffect */ = {
+		04784A4A27F151E3004C2D83 /* Geometry */ = {
 			isa = PBXGroup;
 			children = (
-				04784A4B27F1520F004C2D83 /* GeometryView.swift */,
+				04784A4B27F1520F004C2D83 /* MatchedGeometryView.swift */,
+				04784A5A27FA74D7004C2D83 /* GeometryReaderView.swift */,
+				04784A5C27FA7632004C2D83 /* GeometryReaderDetailView.swift */,
 			);
-			path = GeometryEffect;
+			path = Geometry;
 			sourceTree = "<group>";
 		};
 		048B344427D9A74E001E6643 /* TabView */ = {
@@ -83,7 +89,7 @@
 		04DA724A2737AD7E00479265 /* SwiftUI Practice */ = {
 			isa = PBXGroup;
 			children = (
-				04784A4A27F151E3004C2D83 /* GeometryEffect */,
+				04784A4A27F151E3004C2D83 /* Geometry */,
 				048B344427D9A74E001E6643 /* TabView */,
 				04DA724B2737AD7E00479265 /* SwiftUI_PracticeApp.swift */,
 				04DA724D2737AD7E00479265 /* ContentView.swift */,
@@ -175,10 +181,12 @@
 				04234BEE27D1022300AC469D /* SettingView.swift in Sources */,
 				04DA724E2737AD7E00479265 /* ContentView.swift in Sources */,
 				048B344327D9A124001E6643 /* EnterView.swift in Sources */,
-				04784A4C27F1520F004C2D83 /* GeometryView.swift in Sources */,
+				04784A4C27F1520F004C2D83 /* MatchedGeometryView.swift in Sources */,
 				04234BF227D1024700AC469D /* HelloView.swift in Sources */,
 				04234BF027D1023100AC469D /* LoginView.swift in Sources */,
 				04DA724C2737AD7E00479265 /* SwiftUI_PracticeApp.swift in Sources */,
+				04784A5D27FA7632004C2D83 /* GeometryReaderDetailView.swift in Sources */,
+				04784A5B27FA74D7004C2D83 /* GeometryReaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
